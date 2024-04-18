@@ -1,0 +1,9 @@
+<p>cart works!</p>
+<div>
+	<h3>cart</h3>
+	<button (click)="cartStore.addToCart({ id: 1, name: 'glass', quantity: 2, price: 40 })">
+		add to cart
+	</button>
+	<button (click)="cartStore.removeItem(1)">remove from cart</button>
+    <p>total price: {{cartStore.totalPrice()}}</p>
+</div>

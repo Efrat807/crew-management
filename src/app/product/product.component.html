@@ -1,0 +1,10 @@
+<p>product works!</p>
+<div>
+	products: @for(item of products$ | async; track $index) {
+        <div>item: {{item}}</div>
+	<div>id: {{item.id}}</div>
+	<div>name: {{item.name}}</div>
+	<div>price: {{item.price}}</div>
+	<div>quantity: {{item.quantity}}</div>
+	}
+</div>

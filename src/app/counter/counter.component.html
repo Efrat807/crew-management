@@ -1,0 +1,16 @@
+<p>counter works!</p>
+<h2 class="title">counter</h2>
+<!-- <div class="value">{{ this.count() }}</div>
+<div class="value">{{ this.double() }}</div> -->
+
+<!-- <div class="value">{{ count$ | async }}</div> -->
+
+<!-- <button class="increment" (click)="increment()">Increment</button>
+<button class="decrement" (click)="decrement()">Decrement</button>
+<button class="reset" (click)="reset()">Reset</button> -->
+
+<div class="value">{{ counterStore.count() }}</div>
+<div class="value">{{ counterStore.doubleCount() }}</div>
+<button class="increment" (click)="counterStore.increment()">Increment</button>
+<button class="decrement" (click)="counterStore.decrement()">Decrement</button>
+<button class="reset" (click)="counterStore.reset()">Reset</button>

@@ -1,0 +1,8 @@
+<p>crew works!</p>
+<app-crew-designations [message]="messageFromParent" [token]="userToken"
+    (messageEvent)="receivingMessageFunc($event)"
+></app-crew-designations>
+
+<p>{{ receivingMessage }}</p>
+
+<app-func></app-func>
